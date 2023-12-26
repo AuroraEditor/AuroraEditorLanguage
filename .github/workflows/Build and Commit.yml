@@ -75,19 +75,20 @@ jobs:
           COMMIT_LOG=$(git log $LATEST_TAG..HEAD --pretty=format:"%h - %s")
           echo "::set-output name=notes::$COMMIT_LOG"
 
-      - name: Create Tag If None Exists
-        if: steps.latesttag.outputs.tag == ''
+      - name: Create Tag
         run: |
-          git tag -a "1.0.0" -m "Initial tag"
-          git push --tags
+          NEW_TAG="v$(date +'%Y.%m.%d')-$(git rev-parse --short HEAD)"
+          git tag $NEW_TAG
+          git push origin $NEW_TAG
+          echo "NEW_TAG=$NEW_TAG" >> $GITHUB_ENV
 
       - name: Create Release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ env.NEW_TAG }}
+          release_name: Release ${{ env.NEW_TAG }}
           body: ${{ steps.release-notes.outputs.notes }}
           draft: false
           prerelease: false
