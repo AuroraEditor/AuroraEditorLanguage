@@ -42,7 +42,7 @@ RESOURCES_PATH="$PARENT_DIR/Sources/AuroraEditorLanguage/Resources"
 
 # Remove previously generated files, if they exist
 [ -e "$OUTPUT_PATH" ] && rm -rf "$OUTPUT_PATH"
-[ -e "$OUTPUT_PATH.7z" ] && rm -f "$OUTPUT_PATH.7z"
+[ -e "$OUTPUT_PATH.zip" ] && rm -f "$OUTPUT_PATH.zip"
 status "Removed previous generated files!"
 
 # Begin building the framework project
@@ -61,13 +61,13 @@ xcodebuild -create-xcframework \
     -framework "$FRAMEWORK_PATH" \
     -output "$OUTPUT_PATH" > "$BUILD_OUTPUT_DESTINATION"  # Package framework into xcframework
 
-# Use 7-Zip for maximum compression of the xcframework
-status "Compressing AuroraEditorSupportedLanguages.xcframework with 7-Zip..."
-7z a -t7z -mx=9 "$OUTPUT_PATH.7z" "$OUTPUT_PATH" > "$BUILD_OUTPUT_DESTINATION"  # Compress the framework
+# Use zip for compression of the xcframework
+status "Compressing AuroraEditorSupportedLanguages.xcframework with zip..."
+zip -r "$OUTPUT_PATH.zip" "$OUTPUT_PATH" > "$BUILD_OUTPUT_DESTINATION"
 
 # Remove the uncompressed xcframework after zipping
 rm -rf "$OUTPUT_PATH"
-status "AuroraEditorSupportedLanguages.xcframework.7z created!"
+status "AuroraEditorSupportedLanguages.xcframework.zip created!"
 
 # Copy language query files to the package resources
 status "Copying language queries to package resources..."
