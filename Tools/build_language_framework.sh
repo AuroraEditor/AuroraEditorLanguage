@@ -63,7 +63,7 @@ xcodebuild -create-xcframework \
 
 # Use zip for compression of the xcframework
 status "Compressing AuroraEditorSupportedLanguages.xcframework with zip..."
-zip -r "$OUTPUT_PATH.zip" "$OUTPUT_PATH" > "$BUILD_OUTPUT_DESTINATION"
+zip -r -9 "$OUTPUT_PATH.zip" "$OUTPUT_PATH" > "$BUILD_OUTPUT_DESTINATION"
 
 # Remove the uncompressed xcframework after zipping
 rm -rf "$OUTPUT_PATH"
