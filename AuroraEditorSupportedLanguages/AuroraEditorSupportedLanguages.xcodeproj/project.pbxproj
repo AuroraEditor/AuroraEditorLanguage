@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A01AF0382B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.h in Headers */ = {isa = PBXBuildFile; fileRef = A01AF0372B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A01AF0402B3A1F9E0073AC13 /* TreeSitterC in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF03F2B3A1F9E0073AC13 /* TreeSitterC */; };
+		A01AF0432B3A1FBA0073AC13 /* TreeSitterRuby in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0422B3A1FBA0073AC13 /* TreeSitterRuby */; };
+		A01AF0462B3A1FC60073AC13 /* TreeSitterPHP in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0452B3A1FC60073AC13 /* TreeSitterPHP */; };
+		A01AF0492B3A1FD30073AC13 /* TreeSitterJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0482B3A1FD30073AC13 /* TreeSitterJSON */; };
+		A01AF04C2B3A1FE20073AC13 /* TreeSitterJS in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF04B2B3A1FE20073AC13 /* TreeSitterJS */; };
+		A01AF04F2B3A1FFC0073AC13 /* TreeSitterElixir in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF04E2B3A1FFC0073AC13 /* TreeSitterElixir */; };
+		A01AF0522B3A200A0073AC13 /* TreeSitterGo in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0512B3A200A0073AC13 /* TreeSitterGo */; };
+		A01AF0552B3A20210073AC13 /* TreeSitterJava in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0542B3A20210073AC13 /* TreeSitterJava */; };
+		A01AF0582B3A20310073AC13 /* TreeSitterCSharp in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0572B3A20310073AC13 /* TreeSitterCSharp */; };
+		A01AF05B2B3A206C0073AC13 /* TreeSitterCSS in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF05A2B3A206C0073AC13 /* TreeSitterCSS */; };
+		A01AF05E2B3A207C0073AC13 /* TreeSitterBash in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF05D2B3A207C0073AC13 /* TreeSitterBash */; };
+		A01AF0612B3A208E0073AC13 /* TreeSitterCPP in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0602B3A208E0073AC13 /* TreeSitterCPP */; };
+		A01AF0642B3A20A20073AC13 /* TreeSitterOCaml in Frameworks */ = {isa = PBXBuildFile; productRef = A01AF0632B3A20A20073AC13 /* TreeSitterOCaml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A01AF0342B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuroraEditorSupportedLanguages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01AF0372B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuroraEditorSupportedLanguages.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A01AF0312B3A1EE10073AC13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01AF0642B3A20A20073AC13 /* TreeSitterOCaml in Frameworks */,
+				A01AF0462B3A1FC60073AC13 /* TreeSitterPHP in Frameworks */,
+				A01AF04C2B3A1FE20073AC13 /* TreeSitterJS in Frameworks */,
+				A01AF05E2B3A207C0073AC13 /* TreeSitterBash in Frameworks */,
+				A01AF0612B3A208E0073AC13 /* TreeSitterCPP in Frameworks */,
+				A01AF0522B3A200A0073AC13 /* TreeSitterGo in Frameworks */,
+				A01AF0552B3A20210073AC13 /* TreeSitterJava in Frameworks */,
+				A01AF0582B3A20310073AC13 /* TreeSitterCSharp in Frameworks */,
+				A01AF0402B3A1F9E0073AC13 /* TreeSitterC in Frameworks */,
+				A01AF0432B3A1FBA0073AC13 /* TreeSitterRuby in Frameworks */,
+				A01AF04F2B3A1FFC0073AC13 /* TreeSitterElixir in Frameworks */,
+				A01AF0492B3A1FD30073AC13 /* TreeSitterJSON in Frameworks */,
+				A01AF05B2B3A206C0073AC13 /* TreeSitterCSS in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01AF02A2B3A1EE10073AC13 = {
+			isa = PBXGroup;
+			children = (
+				A01AF0362B3A1EE10073AC13 /* AuroraEditorSupportedLanguages */,
+				A01AF0352B3A1EE10073AC13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A01AF0352B3A1EE10073AC13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01AF0342B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A01AF0362B3A1EE10073AC13 /* AuroraEditorSupportedLanguages */ = {
+			isa = PBXGroup;
+			children = (
+				A01AF0372B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.h */,
+			);
+			path = AuroraEditorSupportedLanguages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A01AF02F2B3A1EE10073AC13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01AF0382B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A01AF0332B3A1EE10073AC13 /* AuroraEditorSupportedLanguages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01AF03B2B3A1EE10073AC13 /* Build configuration list for PBXNativeTarget "AuroraEditorSupportedLanguages" */;
+			buildPhases = (
+				A01AF02F2B3A1EE10073AC13 /* Headers */,
+				A01AF0302B3A1EE10073AC13 /* Sources */,
+				A01AF0312B3A1EE10073AC13 /* Frameworks */,
+				A01AF0322B3A1EE10073AC13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuroraEditorSupportedLanguages;
+			packageProductDependencies = (
+				A01AF03F2B3A1F9E0073AC13 /* TreeSitterC */,
+				A01AF0422B3A1FBA0073AC13 /* TreeSitterRuby */,
+				A01AF0452B3A1FC60073AC13 /* TreeSitterPHP */,
+				A01AF0482B3A1FD30073AC13 /* TreeSitterJSON */,
+				A01AF04B2B3A1FE20073AC13 /* TreeSitterJS */,
+				A01AF04E2B3A1FFC0073AC13 /* TreeSitterElixir */,
+				A01AF0512B3A200A0073AC13 /* TreeSitterGo */,
+				A01AF0542B3A20210073AC13 /* TreeSitterJava */,
+				A01AF0572B3A20310073AC13 /* TreeSitterCSharp */,
+				A01AF05A2B3A206C0073AC13 /* TreeSitterCSS */,
+				A01AF05D2B3A207C0073AC13 /* TreeSitterBash */,
+				A01AF0602B3A208E0073AC13 /* TreeSitterCPP */,
+				A01AF0632B3A20A20073AC13 /* TreeSitterOCaml */,
+			);
+			productName = AuroraEditorSupportedLanguages;
+			productReference = A01AF0342B3A1EE10073AC13 /* AuroraEditorSupportedLanguages.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A01AF02B2B3A1EE10073AC13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					A01AF0332B3A1EE10073AC13 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = A01AF02E2B3A1EE10073AC13 /* Build configuration list for PBXProject "AuroraEditorSupportedLanguages" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A01AF02A2B3A1EE10073AC13;
+			packageReferences = (
+				A01AF03E2B3A1F9E0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-c" */,
+				A01AF0412B3A1FBA0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-ruby" */,
+				A01AF0442B3A1FC60073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-php" */,
+				A01AF0472B3A1FD30073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-json" */,
+				A01AF04A2B3A1FE20073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-javascript" */,
+				A01AF04D2B3A1FFC0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-elixir" */,
+				A01AF0502B3A200A0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-go" */,
+				A01AF0532B3A20210073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-java" */,
+				A01AF0562B3A20310073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-c-sharp" */,
+				A01AF0592B3A206C0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-css" */,
+				A01AF05C2B3A207C0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-bash" */,
+				A01AF05F2B3A208E0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-cpp" */,
+				A01AF0622B3A20A20073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-ocaml" */,
+			);
+			productRefGroup = A01AF0352B3A1EE10073AC13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A01AF0332B3A1EE10073AC13 /* AuroraEditorSupportedLanguages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A01AF0322B3A1EE10073AC13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A01AF0302B3A1EE10073AC13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A01AF0392B3A1EE10073AC13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A01AF03A2B3A1EE10073AC13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A01AF03C2B3A1EE10073AC13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.auroraeditor.AuroraEditorSupportedLanguages;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		A01AF03D2B3A1EE10073AC13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.auroraeditor.AuroraEditorSupportedLanguages;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A01AF02E2B3A1EE10073AC13 /* Build configuration list for PBXProject "AuroraEditorSupportedLanguages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01AF0392B3A1EE10073AC13 /* Debug */,
+				A01AF03A2B3A1EE10073AC13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01AF03B2B3A1EE10073AC13 /* Build configuration list for PBXNativeTarget "AuroraEditorSupportedLanguages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01AF03C2B3A1EE10073AC13 /* Debug */,
+				A01AF03D2B3A1EE10073AC13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A01AF03E2B3A1F9E0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-c" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-c";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.1;
+			};
+		};
+		A01AF0412B3A1FBA0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-ruby" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-ruby.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF0442B3A1FC60073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-php" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-php.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF0472B3A1FD30073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-json" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-json.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF04A2B3A1FE20073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-javascript" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-javascript.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF04D2B3A1FFC0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-elixir" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elixir-lang/tree-sitter-elixir.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A01AF0502B3A200A0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-go" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-go.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF0532B3A20210073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-java" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-java";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF0562B3A20310073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-c-sharp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-c-sharp";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF0592B3A206C0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-css" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-css";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF05C2B3A207C0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-bash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-bash.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF05F2B3A208E0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-cpp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-cpp";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A01AF0622B3A20A20073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-ocaml" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-ocaml.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A01AF03F2B3A1F9E0073AC13 /* TreeSitterC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF03E2B3A1F9E0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-c" */;
+			productName = TreeSitterC;
+		};
+		A01AF0422B3A1FBA0073AC13 /* TreeSitterRuby */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0412B3A1FBA0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-ruby" */;
+			productName = TreeSitterRuby;
+		};
+		A01AF0452B3A1FC60073AC13 /* TreeSitterPHP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0442B3A1FC60073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-php" */;
+			productName = TreeSitterPHP;
+		};
+		A01AF0482B3A1FD30073AC13 /* TreeSitterJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0472B3A1FD30073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-json" */;
+			productName = TreeSitterJSON;
+		};
+		A01AF04B2B3A1FE20073AC13 /* TreeSitterJS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF04A2B3A1FE20073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-javascript" */;
+			productName = TreeSitterJS;
+		};
+		A01AF04E2B3A1FFC0073AC13 /* TreeSitterElixir */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF04D2B3A1FFC0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-elixir" */;
+			productName = TreeSitterElixir;
+		};
+		A01AF0512B3A200A0073AC13 /* TreeSitterGo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0502B3A200A0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-go" */;
+			productName = TreeSitterGo;
+		};
+		A01AF0542B3A20210073AC13 /* TreeSitterJava */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0532B3A20210073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-java" */;
+			productName = TreeSitterJava;
+		};
+		A01AF0572B3A20310073AC13 /* TreeSitterCSharp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0562B3A20310073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-c-sharp" */;
+			productName = TreeSitterCSharp;
+		};
+		A01AF05A2B3A206C0073AC13 /* TreeSitterCSS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0592B3A206C0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-css" */;
+			productName = TreeSitterCSS;
+		};
+		A01AF05D2B3A207C0073AC13 /* TreeSitterBash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF05C2B3A207C0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-bash" */;
+			productName = TreeSitterBash;
+		};
+		A01AF0602B3A208E0073AC13 /* TreeSitterCPP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF05F2B3A208E0073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-cpp" */;
+			productName = TreeSitterCPP;
+		};
+		A01AF0632B3A20A20073AC13 /* TreeSitterOCaml */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01AF0622B3A20A20073AC13 /* XCRemoteSwiftPackageReference "tree-sitter-ocaml" */;
+			productName = TreeSitterOCaml;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A01AF02B2B3A1EE10073AC13 /* Project object */;
+}

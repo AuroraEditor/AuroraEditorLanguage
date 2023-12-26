@@ -1,0 +1,46 @@
+name: Build and Commit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # Job to build and commit changes
+  build-and-commit:
+    runs-on: macos-latest # Runs the job on the latest macOS runner
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2 # Checks out the code for the GitHub Action
+
+      - name: Check Commit Message
+        run: |
+          commit_message=$(git log -1 --pretty=%B)
+          if [[ $commit_message == "Chore:"* ]]; then
+            echo "Commit starts with 'Chore:', skipping workflow."
+            exit 78
+          fi
+
+      - name: Run Build Script
+        run: |
+          chmod +x ./tools/build_language_framework.sh # Make the build script executable
+          ./tools/build_language_framework.sh --debug # Execute the build script
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+
+      - name: Commit Changes
+        run: |
+          git add .
+          git commit -m "Chore: Update [$(git branch --show-current)] - $(date)"
+
+      - name: Push Changes
+        run: git push origin $(git branch --show-current) # Push the changes to the current branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use GitHub token for authentication
