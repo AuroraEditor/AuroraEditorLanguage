@@ -1,4 +1,4 @@
-name: Build and Commit
+name: Build, Commit, and Release
 
 on:
   push:
@@ -9,13 +9,11 @@ on:
       - main
 
 jobs:
-  # Job to build and commit changes
   build-and-commit:
-    runs-on: macos-latest # Runs the job on the latest macOS runner
-
+    runs-on: macos-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2 # Checks out the code for the GitHub Action
+        uses: actions/checkout@v2
 
       - name: Check Commit Message
         run: |
@@ -27,8 +25,8 @@ jobs:
 
       - name: Run Build Script
         run: |
-          chmod +x ./tools/build_language_framework.sh # Make the build script executable
-          ./tools/build_language_framework.sh --debug # Execute the build script
+          chmod +x ./tools/build_language_framework.sh
+          ./tools/build_language_framework.sh --debug
 
       - name: Configure Git
         run: |
@@ -41,6 +39,50 @@ jobs:
           git commit -m "Chore: Update [$(git branch --show-current)] - $(date)"
 
       - name: Push Changes
-        run: git push origin $(git branch --show-current) # Push the changes to the current branch
+        run: git push origin $(git branch --show-current)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use GitHub token for authentication
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  create-release:
+    needs: build-and-commit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Fetch Tags
+        run: git fetch --tags
+
+      - name: Check for Latest Tag
+        id: latesttag
+        run: |
+          TAG=$(git describe --tags `git rev-list --tags --max-count=1` 2> /dev/null || echo "")
+          echo "::set-output name=tag::$TAG"
+
+      - name: Generate Release Notes
+        id: release-notes
+        run: |
+          LATEST_TAG=${{ steps.latesttag.outputs.tag }}
+          if [ -z "$LATEST_TAG" ]; then
+            # No tags found, use the first commit
+            LATEST_TAG=$(git rev-list --max-parents=0 HEAD)
+          fi
+          COMMIT_LOG=$(git log $LATEST_TAG..HEAD --pretty=format:"%h - %s")
+          echo "::set-output name=notes::$COMMIT_LOG"
+
+      - name: Create Tag If None Exists
+        if: steps.latesttag.outputs.tag == ''
+        run: |
+          git tag -a "1.0.0" -m "Initial tag"
+          git push --tags
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: ${{ steps.release-notes.outputs.notes }}
+          draft: false
+          prerelease: false
