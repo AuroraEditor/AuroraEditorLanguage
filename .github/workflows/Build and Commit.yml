@@ -18,8 +18,8 @@ jobs:
       - name: Check Commit Message
         run: |
           commit_message=$(git log -1 --pretty=%B)
-          if [[ $commit_message == "Chore:"* ]]; then
-            echo "Commit starts with 'Chore:', skipping workflow."
+          if [[ $commit_message == "Release:"* ]]; then
+            echo "Commit starts with 'Release:', skipping workflow."
             exit 78
           fi
 
@@ -36,7 +36,7 @@ jobs:
       - name: Commit Changes
         run: |
           git add .
-          git commit -m "Chore: Update [$(git branch --show-current)] - $(date)"
+          git commit -m "Release: Update [$(git branch --show-current)] - $(date)"
 
       - name: Push Changes
         run: git push origin $(git branch --show-current)
